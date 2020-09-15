@@ -9,13 +9,21 @@
   
   </div>
   <div class="projects">
-    <h1>Finished Projects</h1>
-    <div class="finishedProjects">
-      <app-project></app-project>
+    <div class="finished">
+      <h1 class="projects_title">Finished Projects</h1>
+      <div class="grid">
+        <div *ngFor="let project of finished" class="projects1">
+          <app-project [project]="project"></app-project>
+        </div>
+      </div>
     </div>
-    <h1>Upcoming Projects</h1>
-    <div class="upcomingProjects">
-      <app-project></app-project>
+    <div class="unfinished">
+      <h1 class="projects_title">Upcoming Projects</h1>
+      <div class="grid">
+        <div *ngFor="let project of unfinished" class="projects1">
+          <app-project [project]="project"></app-project>
+        </div>
+      </div>
     </div>
   </div>
 </div>

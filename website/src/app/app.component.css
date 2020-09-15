@@ -8,6 +8,17 @@ body {
 
 .content {
     margin-left: 15%;
+    width: 70%
+}
+
+.finished {
+    padding-bottom: 80px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    column-gap: 5%;
 }
 
 .intro {
@@ -15,6 +26,19 @@ body {
     width: 40%;
     text-align: left;
     position: relative;
+}
+
+.projects {
+    margin-top: 300px;
+}
+
+.projects1 {
+    padding: 10px;
+    background-color: grey;
+}
+
+.projects_title {
+    padding-bottom: 20px;
 }
 
 .topnav {

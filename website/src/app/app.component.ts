@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'website';
+  finished = ["webscraper", "smash", "android"];
+  unfinished = ["quantum", "unity", "website"]
 }
