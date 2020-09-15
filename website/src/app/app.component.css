@@ -1,0 +1,32 @@
+* {
+    font-family: test;
+}
+
+body {
+    background-color: red;
+}
+
+.content {
+    margin-left: 15%;
+}
+
+.intro {
+    margin-top: 400px;
+    width: 40%;
+    text-align: left;
+    position: relative;
+}
+
+.topnav {
+    position: fixed;
+    margin-left: 15%;
+    width: 70%;
+    overflow: hidden;
+    z-index: 1;
+    background-color: white;
+}
+
+@font-face {
+    font-family: test;
+    src: url("../assets/fonts/Nunito-SemiBold.ttf")
+}

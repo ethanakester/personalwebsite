@@ -1,2 +1,21 @@
-<div>{{title}}</div>
-<app-project></app-project>
+<div class="topnav">
+  <app-topnav></app-topnav>
+</div>
+<div class="content">
+  <div style="overflow: auto;">
+    <div class="intro">
+      <app-intro></app-intro>
+    </div>
+  
+  </div>
+  <div class="projects">
+    <h1>Finished Projects</h1>
+    <div class="finishedProjects">
+      <app-project></app-project>
+    </div>
+    <h1>Upcoming Projects</h1>
+    <div class="upcomingProjects">
+      <app-project></app-project>
+    </div>
+  </div>
+</div>
