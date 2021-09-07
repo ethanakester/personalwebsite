@@ -9,7 +9,7 @@ export class TopnavComponent implements OnInit {
 
   locale = {
     info: {
-      desc: "Computer Science | Coffee",
+      desc: "Computer Science",
       name: "Ethan Akester"
     },
     links: {

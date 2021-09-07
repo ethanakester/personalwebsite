@@ -13,6 +13,15 @@ a:hover {
     color: red;
 }
 
+.desc {
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+h2 {
+    margin-bottom: 0px;
+}
+
 .link {
     margin-right:20px;
 }

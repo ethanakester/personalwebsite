@@ -8,22 +8,39 @@
     </div>
   
   </div>
-  <div class="projects" style="display: none">
+  <div class="projects">
     <div class="finished">
       <h1 class="projects_title">Finished Projects</h1>
       <div class="grid">
-        <div *ngFor="let project of finished" class="projects1">
-          <app-project [project]="project"></app-project>
+        <div *ngFor="let project of finished" class="projects_button" (click)="openModal(project);">
+          <div class="text-center">
+            <h2 class="projects_margin">{{projects[project].title}}</h2>
+            <div class="languages" *ngFor="let lang of projects[project].languages">
+                <img src="../../assets/images/{{lang}}.svg" alt="">
+            </div>
+          </div>
         </div>
       </div>
     </div>
     <div class="unfinished">
       <h1 class="projects_title">Upcoming Projects</h1>
       <div class="grid">
-        <div *ngFor="let project of unfinished" class="projects1">
-          <app-project [project]="project"></app-project>
+        <div *ngFor="let project of unfinished" class="projects_button" (click)="openModal(project);">
+          <div class="text-center">
+            <h2 class="projects_margin">{{projects[project].title}}</h2>
+            <div class="languages" *ngFor="let lang of projects[project].languages">
+                <img src="../../assets/images/{{lang}}.svg" alt="">
+            </div>
+          </div>
         </div>
       </div>
     </div>
+  </div>
+  <div>
+    <app-modal></app-modal>
+  </div>
+  <!-- <button mat-raised-button (click)="openDialog()">Test</button> -->
+  <div style="margin-top: 100px;">
+
   </div>
 </div>
