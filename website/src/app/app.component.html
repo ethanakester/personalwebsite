@@ -12,7 +12,7 @@
     <div class="finished">
       <h1 class="projects_title">Finished Projects</h1>
       <div class="grid">
-        <div *ngFor="let project of finished" class="projects_button" (click)="openModal(project);">
+        <div *ngFor="let project of finished" class="projects_button" (click)="openDialog();">
           <div class="text-center">
             <h2 class="projects_margin">{{projects[project].title}}</h2>
             <div class="languages" *ngFor="let lang of projects[project].languages">
@@ -36,10 +36,10 @@
       </div>
     </div>
   </div>
-  <div>
-    <app-modal></app-modal>
-  </div>
-  <!-- <button mat-raised-button (click)="openDialog()">Test</button> -->
+  <!-- <div> -->
+    <!-- <app-modal></app-modal> -->
+  <!-- </div> -->
+  <button (click)="openDialog()">Test</button>
   <div style="margin-top: 100px;">
 
   </div>

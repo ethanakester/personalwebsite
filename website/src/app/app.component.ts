@@ -49,11 +49,8 @@ export class AppComponent {
       desc: "temp6"
     }
   };
-  // openModal = function(content: string): void {
-  //   console.log("CONTENT: " + content);
-  // }
-  // constructor(public dialog: MatDialog) {}
+  constructor(private dialogRef: MatDialog) {}
   openDialog() {
-    this.dialog.open(ModalComponent);
+    this.dialogRef.open(ModalComponent);
   }
 }
