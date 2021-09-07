@@ -1,6 +1,4 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { MatDialog } from '@angular/material/dialog';
-import { ModalComponent } from '../modal/modal.component'
 
 @Component({
   selector: 'app-project',
@@ -14,14 +12,9 @@ export class ProjectComponent implements OnInit {
   @Input() langs: string[];
   @Input() desc: string;
 
-  
-  constructor(private dialogRef: MatDialog) {}
-  openDialog() {
-    this.dialogRef.open(ModalComponent);
-  }
+  constructor() {}
 
   ngOnInit(): void {
-    console.log("langs: ", this.langs);
   }
 
 }

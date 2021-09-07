@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ProjectComponent } from '../project/project.component';
+import { MatDialog } from '@angular/material/dialog';
+import { ModalComponent } from '../modal/modal.component'
 
 @Component({
   selector: 'app-projects',
@@ -7,8 +9,6 @@ import { ProjectComponent } from '../project/project.component';
   styleUrls: ['./projects.component.css']
 })
 export class ProjectsComponent implements OnInit {
-
-  constructor() { }
 
   ngOnInit(): void {
   }
@@ -53,5 +53,11 @@ export class ProjectsComponent implements OnInit {
       desc: "temp6"
     }
   };
+
+  constructor(private dialogRef: MatDialog) {}
+  openDialog() {
+    console.log("Click");
+    this.dialogRef.open(ModalComponent);
+  }
 
 }
