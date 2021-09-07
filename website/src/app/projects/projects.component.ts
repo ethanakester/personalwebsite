@@ -1,12 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ProjectComponent } from '../project/project.component';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-projects',
+  templateUrl: './projects.component.html',
+  styleUrls: ['./projects.component.css']
 })
-export class AppComponent {
-  title = 'website';
+export class ProjectsComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
   finished = ["webscraper", "smash", "android"];
   unfinished = ["quantum", "unity", "website"];
   projects = {
@@ -47,4 +53,5 @@ export class AppComponent {
       desc: "temp6"
     }
   };
+
 }

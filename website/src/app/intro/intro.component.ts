@@ -19,13 +19,4 @@ export class IntroComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  print(): void {
-    console.log("test");
-    document.body.style.backgroundColor = "red";
-  }
-
-  onScroll(): void {
-    console.log("TESTTEST");
-  }
-
 }

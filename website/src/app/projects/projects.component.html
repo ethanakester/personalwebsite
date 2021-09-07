@@ -1,0 +1,24 @@
+<div class="projects">
+  <div class="finished">
+    <h1 class="projects_title">Finished Projects</h1>
+    <div class="grid">
+    	<app-project class="projects_button" 
+	    	*ngFor="let project of finished" 
+	    	[title]="projects[project].title" 
+	    	[langs]="projects[project].languages" 
+	    	[desc]="temp">	
+    	</app-project>
+    </div>
+  </div>
+  <div class="unfinished">
+    <h1 class="projects_title">Upcoming Projects</h1>
+    <div class="grid">
+    	<app-project class="projects_button" 
+	    	*ngFor="let project of unfinished" 
+	    	[title]="projects[project].title" 
+	    	[langs]="projects[project].languages" 
+	    	[desc]="temp">	
+    	</app-project>
+    </div>
+  </div>
+</div>
