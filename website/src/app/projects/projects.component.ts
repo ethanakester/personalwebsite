@@ -3,6 +3,9 @@ import { ProjectComponent } from '../project/project.component';
 import { MatDialog } from '@angular/material/dialog';
 import { ModalComponent } from '../modal/modal.component'
 
+
+
+
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
@@ -54,10 +57,15 @@ export class ProjectsComponent implements OnInit {
     }
   };
 
-  constructor(private dialogRef: MatDialog) {}
-  openDialog() {
-    console.log("Click");
-    this.dialogRef.open(ModalComponent);
+  constructor(private dialog: MatDialog) {}
+  openDialog(obj){
+    const dialogRef = this.dialog.open(ModalComponent, {
+      // width: '250px', 
+      data: {"title": obj.title, "langs": obj.langs, "desc": obj.desc}
+    });
+    dialogRef.afterClosed().subscribe((result) => {
+      console.log("Closed dialog");
+    });
   }
 
 }

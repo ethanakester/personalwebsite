@@ -6,7 +6,7 @@
 	    	*ngFor="let project of finished" 
 	    	[title]="projects[project].title" 
 	    	[langs]="projects[project].languages" 
-	    	[desc]="temp" (click)="openDialog()">	
+	    	[desc]="temp" (click)="openDialog(projects[project])">	
     	</app-project>
     </div>
   </div>
@@ -17,7 +17,7 @@
 	    	*ngFor="let project of unfinished" 
 	    	[title]="projects[project].title" 
 	    	[langs]="projects[project].languages" 
-	    	[desc]="temp" (click)="openDialog()">	
+	    	[desc]="temp" (click)="openDialog(projects[project])">	
     	</app-project>
     </div>
   </div>
