@@ -3,8 +3,9 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 export interface DialogData {
   title: string;
-  langs: string[];
   desc: string;
+  github: string;
+  points: string[];
 }
 
 @Component({

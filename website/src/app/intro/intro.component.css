@@ -1,13 +1,14 @@
 p {
     /* height: 10px; */
-    font-size: 20px;
+    font-size: 25px;
 }
 
 h1 {
-    margin-bottom: 35px;
-    margin-top: 5px;
+    margin-bottom: 72px;
+    margin-top: 20px;
+    font-size: 50px;
 }
 
 .hey {
-    margin-bottom: 5px;
+    margin-bottom: 16px;
 }

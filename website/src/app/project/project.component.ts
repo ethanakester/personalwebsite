@@ -11,6 +11,7 @@ export class ProjectComponent implements OnInit {
   @Input() title: string;
   @Input() langs: string[];
   @Input() desc: string;
+  @Input() dates: string;
 
   constructor() {}
 

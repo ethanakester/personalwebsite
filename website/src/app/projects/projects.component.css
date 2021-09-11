@@ -4,13 +4,14 @@
 }
 
 .finished {
-    padding-bottom: 80px;
+    padding-bottom: 130px;
 }
 
 .grid {
     display: grid;
     grid-template-columns: 30% 30% 30%;
     column-gap: 5%;
+    row-gap: 20%;
 }
 
 .intro {
@@ -35,8 +36,8 @@
 
 .projects_button {
     padding: 10px;
-    background-color: grey;
     cursor: pointer;
+    border: 1px solid black;
 }
 
 .projects_title {
