@@ -2,16 +2,25 @@
 <mat-dialog-actions align="end" class="close">
 	<button mat-button mat-dialog-close><img src="../../assets/images/close.svg" alt=""></button>
 </mat-dialog-actions>
-<h3>TL;DR</h3>
-<div class="points">
-	<ul>
-		<li *ngFor="let point of data.points">{{ point }}</li>
-	</ul>
+<div *ngIf="data.points.length != 0">
+	<h3>TL;DR</h3>
+	<div class="points">
+		<ul>
+			<li *ngFor="let point of data.points">{{ point }}</li>
+		</ul>
+	</div>
+	<h3>Reflection</h3>
+	<p>{{ data.desc }}</p>
+	<br>
+
+
+	<a *ngIf="data.github != null" href="{{ data.github }}" target="_blank">GitHub</a>
+	<p *ngIf="data.github == null">No GitHub link available</p>
 </div>
-<h3>Reflection</h3>
-<p>{{ data.desc }}</p>
+<div *ngIf="data.points.length == 0">
+	<h3>Description</h3>
+	<p>{{ data.desc }}</p>
+</div>
 
 
-<a *ngIf="data.github != null" href="{{ data.github }}" target="_blank">GitHub</a>
-<p *ngIf="data.github == null">No GitHub link available</p>
 

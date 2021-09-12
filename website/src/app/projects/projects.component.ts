@@ -23,48 +23,50 @@ export class ProjectsComponent implements OnInit {
       title: "Android Studio App",
       icon: "temp",
       languages: ["java"],
-      desc: "temp1",
+      desc: "As a final project for a course at UofT we implemented a game centre in android studio \
+      given only some base skeleton code. With this project being early in my CS career, it was good practice for learning how to \
+      work on a project in a group setting, and how to work on a pre-existing code base in an unfamiliar development environment.",
       github: null,
       dates:"September 2018 - December 2018",
-      points: ["a",
-        "b",
-        "c",
+      points: ["Created a game centre with Minesweeper and 2048",
+        "Implemented user authentication using Firebase",
       ]
     },
     quantum: {
       title: "Quantum Something",
       icon: "temp",
       languages: ["python"],
-      desc: "temp2",
+      desc: "Quantum computing is an interest of mine, so I have future projects in mind for it. I would like to go through the IBM \
+      Qiskit tutorial to learn the API, and then attend one of the TRIUMF intro to quantum computing courses to learn more about the subject.",
       github: null,
       dates: "August 2021 - Present",
-      points: ["a",
-        "b",
-        "c",
-      ]
+      points: []
     },
     smash: {
       title: "UofT Skule Smash Website",
       icon: "temp",
       languages: ["html", "css"],
-      desc: "temp3",
+      desc: "I was chosen to be the website admin for the UofT Skule Smash club. I had very minimal experience in this area prior to this, \
+      and so the finished product was quite crude and basic since it was only written in static HTML and CSS. While this isnt a great project \
+      on its own, I enjoy having it to see how far I've come as a developer and to see how much growth I've experienced.",
       github: "https://github.com/ethanakester/website",
       dates: "August 2018 - September 2018",
-      points: ["a",
-        "b",
-        "c",
+      points: ["Created the UofT Skule Smash website using static HTML and CSS",
+        "Worked closely with club members to implement specific design choices",
       ]
     },
     webscraper: {
       title: "Python Webscraper",
       icon: "temp",
       languages: ["python"],
-      desc: "temp4",
+      desc: "This was the first project that I had attempted in my CS career. The motivation for it came when I was tasked to do very extensive \
+      data entry during a summer job, and I was sure that there had to be a way to automate it. Having just finished first year I was still very \
+      unfamiliar with using third party libraries or APIs, so despite the task itself being pretty simple, it was still a challenge for me. The code \
+      itself isn't polished or refined, but it does allow me to see how far I've grown over my years as a developer.",
       github: "https://github.com/ethanakester/Python-Webscraper",
       dates: "July 2018 - August 2018",
-      points: ["a",
-        "b",
-        "c",
+      points: ["Used selenium webdrivers to find information from select websites",
+        "Included openpyxl and xlsxwriter to be able to read from and write to excel sheets",
       ]
     },
     website: {
@@ -79,19 +81,22 @@ export class ProjectsComponent implements OnInit {
       points: ["Frontend implemented using Angular 10",
         "Running remotely on an AWS EC2 instance",
         "Uses an NginX server as the backend",
-        "Secure and encrypted using verified HTTPS connection"
+        "Secure and encrypted using verified HTTPS connection",
       ]
     },
     unity: {
       title: "Unity Game Development",
       icon: "temp",
       languages: ["c_sharp"],
-      desc: "temp6",
+      desc: "As part of a software engineering course at UofT we created a 2D educational game to the specifications given to us by a \
+      Toronto based company HiGarden. This included bi-weekly meetings with them, as well as 4 deliverables over the course of the semester. \
+      Being the only one in the group with experience working in Unity I was also required to give them a code walkthrough and help them \
+      understand how to use the engine.",
       github: null,
       dates: "September 2020 - December 2020",
-      points: ["a",
-        "b",
-        "c",
+      points: ["Coordinated closely with Toronto based company HiGarden to deliver an MVP",
+        "Practiced working in an agile environment with 5 other group members",
+        "Created a 2D educational game for use by young school children",
       ]
     }
   };
